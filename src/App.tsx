@@ -1,10 +1,13 @@
 import React from 'react';
 import Contents from './component/Content'
+import {StoreProvider} from './Store'
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Contents />
+      <StoreProvider>
+        <Contents />
+      </StoreProvider>
     </div>
   );
 }
